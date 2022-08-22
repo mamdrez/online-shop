@@ -1,0 +1,78 @@
+.mainContainer {
+  background-color: #d9dfff60;
+  margin: 0 0 100px;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  backdrop-filter: blur(10px);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+  height: 40px;
+  padding: 15px 180px;
+}
+
+.productLink {
+  text-decoration: none;
+  color: #e77e61;
+  font-size: 2rem;
+  border-bottom: 4px solid #e77e61;
+  border-radius: 2px;
+  padding: 0 1px;
+  transition: all 0.2s ease;
+  font-family: "title";
+}
+
+.productLink:hover {
+  color: #9f3c20;
+  border-bottom-color: #9f3c20;
+}
+
+.iconContainer {
+  position: relative;
+}
+
+.iconContainer img {
+  width: 40px;
+  color: #e77e61;
+}
+
+.iconContainer span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #e77e61;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  font-size: 0.75rem;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  font-family: "navbae";
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 15px 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px 40px;
+  }
+}
+
+@media (max-width: 555px) {
+  .container {
+    padding: 15px 20px;
+  }
+}
